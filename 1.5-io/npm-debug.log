@@ -1,0 +1,54 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/0.8.8/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'yeo' ]
+2 info using npm@1.1.59
+3 info using node@v0.8.8
+4 verbose read json /usr/local/share/npm/lib/package.json
+5 verbose read json /usr/local/share/npm/lib/package.json
+6 verbose cache add [ 'yeo', null ]
+7 silly cache add name=undefined spec="yeo" args=["yeo",null]
+8 verbose parsed url { pathname: 'yeo', path: 'yeo', href: 'yeo' }
+9 silly lockFile 6da7e262-yeo yeo
+10 verbose lock yeo /Users/arbiesamong/.npm/6da7e262-yeo.lock
+11 silly lockFile 6da7e262-yeo yeo
+12 verbose addNamed [ 'yeo', '' ]
+13 verbose addNamed [ null, '' ]
+14 silly lockFile f6243ad4-yeo yeo@
+15 verbose lock yeo@ /Users/arbiesamong/.npm/f6243ad4-yeo.lock
+16 silly addNameRange { name: 'yeo', range: '', hasData: false }
+17 verbose url raw yeo
+18 verbose url resolving [ 'https://registry.npmjs.org/', './yeo' ]
+19 verbose url resolved https://registry.npmjs.org/yeo
+20 info retry registry request attempt 1 at 00:11:50
+21 http GET https://registry.npmjs.org/yeo
+22 info retry will retry, error on last attempt: Error: SSL Error: CERT_UNTRUSTED
+23 info retry registry request attempt 2 at 00:12:01
+24 http GET https://registry.npmjs.org/yeo
+25 info retry will retry, error on last attempt: Error: SSL Error: CERT_UNTRUSTED
+26 info retry registry request attempt 3 at 00:13:01
+27 http GET https://registry.npmjs.org/yeo
+28 silly lockFile f6243ad4-yeo yeo@
+29 error Error: SSL Error: CERT_UNTRUSTED
+29 error     at ClientRequest.<anonymous> (/usr/local/Cellar/node/0.8.8/lib/node_modules/npm/node_modules/request/main.js:525:26)
+29 error     at ClientRequest.g (events.js:185:14)
+29 error     at ClientRequest.EventEmitter.emit (events.js:88:17)
+29 error     at HTTPParser.parserOnIncomingClient [as onIncoming] (http.js:1455:7)
+29 error     at HTTPParser.parserOnHeadersComplete [as onHeadersComplete] (http.js:111:23)
+29 error     at CleartextStream.socketOnData [as ondata] (http.js:1366:20)
+29 error     at CleartextStream.CryptoStream._push (tls.js:495:27)
+29 error     at SecurePair.cycle (tls.js:849:20)
+29 error     at EncryptedStream.CryptoStream.write (tls.js:230:13)
+29 error     at Socket.ondata (stream.js:38:26)
+30 error If you need help, you may report this log at:
+30 error     <http://github.com/isaacs/npm/issues>
+30 error or email it to:
+30 error     <npm-@googlegroups.com>
+31 error System Darwin 11.4.2
+32 error command "/usr/local/Cellar/node/0.8.8/bin/node" "/usr/local/bin/npm" "install" "-g" "yeo"
+33 error cwd /Users/arbiesamong/Developer/c/ritchie-tute/1.5-io
+34 error node -v v0.8.8
+35 error npm -v 1.1.59
+36 verbose exit [ 1, true ]
